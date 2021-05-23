@@ -11,7 +11,7 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Next.js TypeScript Quickstart</title>
+        <title>English House</title>
       </Head>
       <ChakraProvider theme={theme}>
         <Component {...pageProps} />

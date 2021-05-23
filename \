@@ -1,0 +1,12 @@
+import { Box } from '@chakra-ui/react'
+import React from 'react'
+
+const testing: React.FC = () => {
+  return (
+    <Box bg="white" w="90%" mx="auto">
+      ini jumbotron
+    </Box>
+  )
+}
+
+export default testing
