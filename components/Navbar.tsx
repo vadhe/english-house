@@ -1,14 +1,14 @@
 import React from 'react'
-import { Box, Flex, Link as LinkChakra } from '@chakra-ui/react'
-import Link from 'next/link'
+import { Box, Flex, Link } from '@chakra-ui/react'
+import NextLink from 'next/link'
 
 const Navbar: React.FC = () => {
   return (
-    <Box bg="base.orange" py="6">
+    <Box bg="base.purple.300" py="6">
       <Flex color="base.white.900">
-        <LinkChakra>
-          <Link href="1">Home</Link>
-        </LinkChakra>
+        <Link color="#000">
+          <NextLink href="1">Home</NextLink>
+        </Link>
       </Flex>
     </Box>
   )

@@ -11,7 +11,7 @@ const testing: React.FC = () => {
         Join With Us on Discord{' '}
       </Heading>
       <Box d="flex" justifyContent="center" mt={6}>
-        <a target="_blank" rel="noopener noreferrer" href="https://wwww.google.com">
+        <a target="_blank" rel="noopener noreferrer" href=" https://discord.gg/7stg99r">
           <img
             src="https://img.shields.io/badge/english%20house%20-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white"
             alt="logo"
