@@ -293,14 +293,14 @@
 
 "@chakra-ui/icon@1.1.9":
   version "1.1.9"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/icon/-/icon-1.1.9.tgz#fbd6e82abf58b890f5bcc728bb75dda25d7b6c63"
+  resolved "https://registry.npmjs.org/@chakra-ui/icon/-/icon-1.1.9.tgz"
   integrity sha512-lmZHK4O+Wo7LwxRsQb0KmtOwq2iACESxwQgackuj7NPHbAsdF2/y3t2f7KCD+dTKGxoauEMgU2nVLePZWjtpTQ==
   dependencies:
     "@chakra-ui/utils" "1.8.0"
 
 "@chakra-ui/icons@^1.0.13":
   version "1.0.13"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/icons/-/icons-1.0.13.tgz#d8eb04479b048d8023ae90d76205cd4a0bf7dd79"
+  resolved "https://registry.npmjs.org/@chakra-ui/icons/-/icons-1.0.13.tgz"
   integrity sha512-twDpFz2uPVboMTEI4QA2y3EJND3G4+/9AVs730fgnnfhTw4EOJt0Lhfm4Spq1qi1LgHF16x4/Lao1E2imB5lWw==
   dependencies:
     "@chakra-ui/icon" "1.1.9"
@@ -676,7 +676,7 @@
 
 "@chakra-ui/utils@1.8.0":
   version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/utils/-/utils-1.8.0.tgz#f7aad8175cc5a26a1d2795dc78691bbc21fd539e"
+  resolved "https://registry.npmjs.org/@chakra-ui/utils/-/utils-1.8.0.tgz"
   integrity sha512-BWIhKcXnLbOIwCTKeNcOStNwk9RyYVA9xRRFPGK6Kp3EhrxP0rDwAbu4D3o3qAc+yhIDhGmPaIj1jRXHB5DTfg==
   dependencies:
     "@types/lodash.mergewith" "4.6.6"

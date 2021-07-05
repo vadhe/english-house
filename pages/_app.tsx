@@ -2,9 +2,10 @@ import * as React from 'react'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { ChakraProvider } from '@chakra-ui/react'
-
+import './global.css'
 import 'modern-normalize'
 import theme from 'theme/theme'
+import Fonts from 'theme/Fonts'
 
 export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
@@ -14,6 +15,7 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         <title>English House</title>
       </Head>
       <ChakraProvider theme={theme}>
+        <Fonts />
         <Component {...pageProps} />
       </ChakraProvider>
     </>

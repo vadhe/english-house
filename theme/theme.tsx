@@ -4,8 +4,9 @@ import { extendTheme } from '@chakra-ui/react'
 const theme = extendTheme({
   styles: {
     global: {
-      'html, body': {
-        backgroundColor: 'purple.200'
+      body: {
+        fontFamily: ' Roboto Slab, serif',
+        color: '#09101b'
       }
     }
   },

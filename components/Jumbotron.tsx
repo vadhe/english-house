@@ -1,25 +1,34 @@
-import { Box, Heading } from '@chakra-ui/react'
 import React from 'react'
+import { Box, Text, Heading, Img } from '@chakra-ui/react'
 
-const testing: React.FC = () => {
-  return (
-    <Box bg="white" w={{ md: '80%', lg: '70%' }} mt={6} mx="auto" textAlign="center" py={6} border="1px" borderColor="black" shadow="xl">
-      <Heading as="h3" fontSize={{ base: 'md', md: '2xl', lg: '3xl' }}>
-        Want to improve Your English?
+const Jumbotron = () => (
+  <Box position="relative" h="90vh">
+    <Box
+      px={1}
+      w={{ lg: '50%' }}
+      mx={{ lg: 'auto' }}
+      textAlign="center"
+      d="flex"
+      justifyContent="center"
+      alignItems="center"
+      flexDir="column"
+      right="0"
+      left="0"
+      top="180"
+      position="fixed"
+    >
+      <Heading fontFamily="Bevas Neue, cursive" as="h2" fontSize={{ base: '4xl' }}>
+        English House
       </Heading>
-      <Heading as="h4" fontSize={{ base: 'sm', md: 'xl', lg: '2xl' }}>
-        Join With Us on Discord{' '}
-      </Heading>
-      <Box d="flex" justifyContent="center" mt={6}>
-        <a target="_blank" rel="noopener noreferrer" href=" https://discord.gg/7stg99r">
-          <img
-            src="https://img.shields.io/badge/english%20house%20-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white"
-            alt="logo"
-          />
-        </a>
-      </Box>
+      <Text my={4} fontSize={{ base: 'xl', lg: '2xl' }}>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, nesciunt.
+      </Text>
+      <Img
+        w={{ base: '80%', md: '40%' }}
+        src="https://img.shields.io/badge/englishhouse%20SERVER%20-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white"
+      />
     </Box>
-  )
-}
+  </Box>
+)
 
-export default testing
+export default Jumbotron
