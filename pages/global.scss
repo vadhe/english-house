@@ -1,0 +1,42 @@
+body {
+  animation: changeBackgroundColor 7s infinite;
+}
+
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: #ffaeff;
+  }
+  50% {
+    background-color: #ffd6ff;
+  }
+  100% {
+    background-color: #ffc8ff;
+  }
+}
+
+.card-hover{
+  &:hover {
+    position: relative ;
+    & > .popup {
+      display: block;
+      position:absolute;
+      width: 100%;
+      height: 100vh;
+      background: #ff000096;
+      top:0;
+      left: 0;
+      right: 0;
+      bottom:0;
+      z-index: 10;
+    } 
+  }
+  
+  .popup {
+    display: none;
+    backdrop-filter: saturate(200%);
+    backdrop-filter: blur(5px);
+  }
+  
+}
+
+

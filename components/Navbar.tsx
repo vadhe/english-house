@@ -16,7 +16,7 @@ const links = [
     name: 'english learning'
   },
   {
-    link: '',
+    link: '#event',
     name: 'Events and Competitions'
   }
 ]

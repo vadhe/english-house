@@ -1,7 +1,8 @@
-import React from 'react'
+import * as React from 'react'
 import { Box, Text, Heading, Img } from '@chakra-ui/react'
+import { motion } from 'framer-motion'
 
-const Jumbotron = () => (
+const Jumbotron: React.FC = () => (
   <Box position="relative" h="90vh">
     <Box
       px={1}
@@ -18,10 +19,14 @@ const Jumbotron = () => (
       position="fixed"
     >
       <Heading fontFamily="Bevas Neue, cursive" as="h2" fontSize={{ base: '4xl' }}>
-        English House
+        <motion.div initial={{ y: -250 }} transition={{ delay: 0.2, type: 'spring' }} animate={{ y: -10 }}>
+          English House
+        </motion.div>
       </Heading>
       <Text my={4} fontSize={{ base: 'xl', lg: '2xl' }}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, nesciunt.
+        <motion.div initial={{ x: -1000 }} transition={{ delay: 0.7, type: 'spring' }} animate={{ x: 0 }}>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, nesciunt.
+        </motion.div>
       </Text>
       <Img
         w={{ base: '80%', md: '40%' }}
