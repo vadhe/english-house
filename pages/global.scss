@@ -4,35 +4,40 @@ body {
 
 @keyframes changeBackgroundColor {
   0% {
-    background-color: #ffaeff;
+    background-color: #eabaacf;
   }
   50% {
-    background-color: #ffd6ff;
+    background-color: #be3400;
+    color: #fff;
   }
   100% {
-    background-color: #ffc8ff;
+    background-color: #020d22;
+    color:#fff;
   }
 }
 
 .card-hover{
+  transition: background 2s,  transform 2s, linear;
+  position: relative ;
   &:hover {
-    position: relative ;
+    transform: rotateY(45deg);
+    background: #eabaacf;
     & > .popup {
-      display: block;
-      position:absolute;
-      width: 100%;
-      height: 100vh;
-      background: #ff000096;
-      top:0;
-      left: 0;
-      right: 0;
-      bottom:0;
-      z-index: 10;
-    } 
+      opacity: 1;
+          } 
   }
   
   .popup {
-    display: none;
+    transition: opacity 2s, linear, 3s;
+    opacity: 0;
+    position:absolute;
+    width: 100%;
+    background: #ff000096;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    z-index: 10;
     backdrop-filter: saturate(200%);
     backdrop-filter: blur(5px);
   }

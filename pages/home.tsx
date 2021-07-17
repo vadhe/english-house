@@ -5,6 +5,7 @@ import Navbar from '~/components/Navbar'
 import Jumbotron from '~/components/Jumbotron'
 import AboutUs from '~/components/AboutUs'
 import SectionCard from '~/components/SectionCard'
+import Footer from '~/components/Footer'
 
 const englishLearning = [
   {
@@ -68,6 +69,7 @@ const Home: NextPage = () => (
       <SectionCard id="english-learning" heading="English Learning" cards={englishLearning} />
       <SectionCard id="event" heading="Events and Competitions" cards={eventCompetitions} />
     </Box>
+    <Footer />
   </Box>
 )
 

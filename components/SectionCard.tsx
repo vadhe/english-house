@@ -15,7 +15,7 @@ interface SectionCardProps {
 }
 
 const SectionCard: React.FC<SectionCardProps> = ({ heading, cards, id }) => (
-  <Box id={id} mb={6} py={16} zIndex="10" bg="tomato" w="100%" color="white">
+  <Box id={id} mb={6} py={16} zIndex="10" bg="#020d22" w="100%" color="white">
     <Heading my={4} fontFamily="Bevas Neue, cursive" as="h2" textAlign="center" fontSize={{ base: '4xl' }}>
       {heading}
     </Heading>

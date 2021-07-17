@@ -2,12 +2,12 @@ import * as React from 'react'
 import { Box, Heading, Img, Text, SimpleGrid } from '@chakra-ui/react'
 
 const AboutUs: React.FC = () => (
-  <Box py={16} id="about" pt={6} bg="#ebf1f9" position="relative" zIndex="10">
+  <Box py={16} id="about" pt={6} bg="#015045" position="relative" zIndex="10">
     <Heading my={4} fontFamily="Bevas Neue, cursive" as="h2" textAlign="center" fontSize={{ base: '4xl' }}>
-      About US
+      About Us
     </Heading>
     <SimpleGrid gap={4} columns={{ base: 1, lg: 2 }} px={{ lg: 32 }}>
-      <Img my={4} mx={{ md: 'auto' }} borderRadius={{ md: '1rem' }} src="/images/EH_Logo.png" />
+      <Img my={4} w="70%" mx={{ md: 'auto' }} borderRadius={{ md: '1rem' }} src="/images/EH_Logo.png" />
       <Box textAlign={{ base: 'center', lg: 'left' }}>
         <Heading mt={4} fontFamily="Bevas Neue, cursive" as="h2" textAlign={{ base: 'center', lg: 'left' }} fontSize={{ base: '4xl' }}>
           English House
