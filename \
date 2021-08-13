@@ -15,20 +15,7 @@ const englishEducation = [
     img: '/images/english-class.png'
   }
 ]
-const englishLearning = [
-  {
-    id: 1,
-    heading: 'Book Club',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
-    img: '/images/english-class.png'
-  },
-  {
-    id: 2,
-    heading: 'IOTD & WOTD',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
-    img: '/images/english-class.png'
-  }
-]
+
 const eventCompetitions = [
   {
     id: 1,
@@ -53,30 +40,6 @@ const eventCompetitions = [
     heading: 'Art competitions',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
     img: '/images/potw.png'
-  },
-  {
-    id: 5,
-    heading: 'Poetry',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
-    img: '/images/potw.png'
-  },
-  {
-    id: 6,
-    heading: 'Artfest',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
-    img: '/images/potw.png'
-  },
-  {
-    id: 7,
-    heading: 'Storytelling',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
-    img: '/images/potw.png'
-  },
-  {
-    id: 8,
-    heading: 'Seasonal Events',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
-    img: '/images/potw.png'
   }
 ]
 const Home: NextPage = () => (
@@ -86,7 +49,7 @@ const Home: NextPage = () => (
     <AboutUs />
     <Box pos="relative" bg="#fff">
       <SectionCard id="english-education" heading="English Education" cards={englishEducation} />
-      <SectionCard id="english-learning" heading="English Learning" cards={englishLearning} />
+      <SectionCard id="english-learning" heading="English Learning" cards={englishEducation} />
       <SectionCard id="event" heading="Events and Competitions" cards={eventCompetitions} />
     </Box>
     <Footer />

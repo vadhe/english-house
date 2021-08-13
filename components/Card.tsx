@@ -43,7 +43,7 @@ const Card: React.FC<CardProps> = ({ img, heading, description, id }) => {
         flexDir="column"
         boxShadow="4xl"
         borderRadius="1rem"
-        w="90%"
+        w={{ base: '100%', lg: '90%' }}
         p={4}
         color="white"
       >
@@ -53,7 +53,7 @@ const Card: React.FC<CardProps> = ({ img, heading, description, id }) => {
           {heading}
         </Heading>
         <Text textAlign="center">{description}</Text>
-        <Box className="popup" borderRadius="1rem" px={2} py={4}>
+        <Box className="popup" overflowY="scroll" borderRadius="1rem" px={2} py={4}>
           English Class is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy
           text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
           survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was

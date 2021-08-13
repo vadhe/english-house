@@ -16,6 +16,9 @@ body {
   }
 }
 
+a {
+  display: block;
+}
 .card-hover{
   transition: background 2s,  transform 2s, linear;
   position: relative ;

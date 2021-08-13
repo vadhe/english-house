@@ -12,9 +12,14 @@ const links = [
     name: 'about'
   },
   {
+    link: '#english-education',
+    name: 'english education'
+  },
+  {
     link: '#english-learning',
     name: 'english learning'
   },
+
   {
     link: '#event',
     name: 'Events and Competitions'
@@ -63,7 +68,7 @@ const Navbar: React.FC = () => {
       zIndex="11"
       style={{ backdropFilter: offset ? 'saturate(200%) blur(15px)' : '' }}
     >
-      <Text>Hello There 👋</Text>
+      <Text>Werlcome 👋</Text>
       <Img d={{ lg: 'none' }} onClick={handleShowHidden} w="40px" src="/images/bar.png" />
       <Box
         d={{ base: showHidden, lg: 'flex' }}
@@ -77,7 +82,7 @@ const Navbar: React.FC = () => {
       >
         {links.map(item => (
           <NextLink passHref href={item.link} key={item.name}>
-            <Link my={{ base: 4, lg: 0 }} mx={{ lg: 4 }}>
+            <Link onClick={handleShowHidden} my={{ base: 4, lg: 0 }} mx={{ lg: 4 }}>
               {item.name}
             </Link>
           </NextLink>

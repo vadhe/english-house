@@ -7,7 +7,7 @@ const AboutUs: React.FC = () => (
       About Us
     </Heading>
     <SimpleGrid gap={4} columns={{ base: 1, lg: 2 }} px={{ lg: 32 }}>
-      <Img my={4} w="70%" mx={{ md: 'auto' }} borderRadius={{ md: '1rem' }} src="/images/EH_Logo.png" />
+      <Img my={4} w="70%" mx={{ base: 'auto' }} borderRadius={{ md: '1rem' }} src="/images/EH_Logo.png" />
       <Box textAlign={{ base: 'center', lg: 'left' }}>
         <Heading mt={4} fontFamily="Bevas Neue, cursive" as="h2" textAlign={{ base: 'center', lg: 'left' }} fontSize={{ base: '4xl' }}>
           English House
