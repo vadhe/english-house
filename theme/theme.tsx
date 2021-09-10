@@ -12,12 +12,10 @@ const theme = extendTheme({
   },
   colors: {
     base: {
-      black: '#212121',
-      white: {
-        900: '#d6d3d3'
-      },
-      orange: '#f95a2c',
-      yellow: '#ffbd12'
+      blue: '#3C5186',
+      purple: '#9B72AA',
+      semiPurple: '#C6B4CE',
+      white: '#FFF5DE'
     }
   }
 })

@@ -8,9 +8,10 @@ export interface CardProps {
   img: string
   heading: string
   description: string
+  bgCard?: string
 }
 
-const Card: React.FC<CardProps> = ({ img, heading, description, id }) => {
+const Card: React.FC<CardProps> = ({ img, heading, description, id, bgCard }) => {
   const { ref, inView } = useInView()
   const animation = useAnimation()
 
@@ -37,7 +38,7 @@ const Card: React.FC<CardProps> = ({ img, heading, description, id }) => {
         ref={ref}
         className="card-hover"
         py={4}
-        bg="#015045"
+        bg={bgCard}
         d="flex"
         alignItems="center"
         flexDir="column"

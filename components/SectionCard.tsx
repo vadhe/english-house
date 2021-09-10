@@ -12,10 +12,12 @@ interface SectionCardProps {
   heading: string
   cards: CardProps[]
   id: string
+  bg: string
+  bgCard: string
 }
 
-const SectionCard: React.FC<SectionCardProps> = ({ heading, cards, id }) => (
-  <Box id={id} mb={6} py={16} zIndex="10" bg="#020d22" w="100%" color="white">
+const SectionCard: React.FC<SectionCardProps> = ({ heading, cards, id, bg, bgCard }) => (
+  <Box id={id} mb={6} py={16} zIndex="10" bg={bg} w="100%" color="white">
     <Heading my={4} fontFamily="Bevas Neue, cursive" as="h2" textAlign="center" fontSize={{ base: '4xl' }}>
       {heading}
     </Heading>
@@ -29,7 +31,7 @@ const SectionCard: React.FC<SectionCardProps> = ({ heading, cards, id }) => (
       outerSpacing={4}
     >
       {cards.map(item => (
-        <Card id={item.id} key={item.id} heading={item.heading} img={item.img} description={item.description} />
+        <Card id={item.id} key={item.id} heading={item.heading} img={item.img} bgCard={bgCard} description={item.description} />
       ))}
     </Carousel>
   </Box>

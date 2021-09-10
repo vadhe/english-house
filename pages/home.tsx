@@ -85,9 +85,9 @@ const Home: NextPage = () => (
     <Jumbotron />
     <AboutUs />
     <Box pos="relative" bg="#fff">
-      <SectionCard id="english-education" heading="English Education" cards={englishEducation} />
-      <SectionCard id="english-learning" heading="English Learning" cards={englishLearning} />
-      <SectionCard id="event" heading="Events and Competitions" cards={eventCompetitions} />
+      <SectionCard bg="base.blue" bgCard="base.purple" id="english-education" heading="English Education" cards={englishEducation} />
+      <SectionCard bg="base.purple" bgCard="base.blue" id="english-learning" heading="English Learning" cards={englishLearning} />
+      <SectionCard bg="base.blue" bgCard="base.purple" id="event" heading="Events and Competitions" cards={eventCompetitions} />
     </Box>
     <Footer />
   </Box>

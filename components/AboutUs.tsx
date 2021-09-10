@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Box, Heading, Img, Text, SimpleGrid } from '@chakra-ui/react'
 
 const AboutUs: React.FC = () => (
-  <Box py={16} id="about" pt={6} bg="#015045" position="relative" zIndex="10">
+  <Box py={16} id="about" pt={6} bg="#9B72AA" color="#fff" position="relative" zIndex="10">
     <Heading my={4} fontFamily="Bevas Neue, cursive" as="h2" textAlign="center" fontSize={{ base: '4xl' }}>
       About Us
     </Heading>
