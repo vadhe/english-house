@@ -17,6 +17,10 @@ const Footer: React.FC = () => {
       <a rel="noreferrer" href="https://www.instagram.com/english.house.id/?igshid=tk3fldemubfq" target="_blank">
         <Img ml={1} w="30px" src="/images/instagram.svg" />
       </a>
+      ||
+      <a rel="noreferrer" href="https://github.com/vadhe/english-house" target="_blank">
+        <Img ml={1} w="30px" src="/images/github.png" />
+      </a>
     </Flex>
   )
 }
