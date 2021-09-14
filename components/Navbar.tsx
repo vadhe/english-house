@@ -1,10 +1,11 @@
-import { Box, Text, Link, Img } from '@chakra-ui/react'
+import { Box, Text, Link, Img, useColorMode, useColorModeValue } from '@chakra-ui/react'
 import * as React from 'react'
 import NextLink from 'next/link'
-// import showHidden from 'utils/showHidden.ts';
+import { MoonIcon } from '@chakra-ui/icons'
+
 const links = [
   {
-    link: '/home',
+    link: '/',
     name: 'home'
   },
   {
@@ -23,9 +24,15 @@ const links = [
   {
     link: '#event',
     name: 'Events and Competitions'
+  },
+  {
+    link: '/reqruitment',
+    name: 'Reqruitment Staff'
   }
 ]
 const Navbar: React.FC = () => {
+  const { toggleColorMode } = useColorMode()
+
   const [showHidden, setShowHidden] = React.useState<string>('none')
   const handleShowHidden = () => {
     if (showHidden === 'none') {
@@ -45,9 +52,11 @@ const Navbar: React.FC = () => {
       }
     }
   }, [offset])
-
+  const bg = useColorModeValue('base.transparn', 'base.dark')
+  const bgMobile = useColorModeValue('base.purple', 'base.dark')
   return (
     <Box
+      color="#fff"
       id="home"
       d={{ base: 'flex', lg: 'flex' }}
       justifyContent="space-between"
@@ -60,11 +69,12 @@ const Navbar: React.FC = () => {
       fontFamily="Bebas Neue, cursive"
       fontWeight={{ base: 'bold', lg: 'light' }}
       fontSize="xl"
-      position="fixed"
+      position="sticky"
       w="100%"
       top="0"
       boxShadow={offset ? 'rgb(0 0 0 / 5%) 0px 15px 25px' : ''}
-      bg={offset ? 'rgba(255,255,255,0.5)' : '#00000000'}
+      bg={offset ? 'rgba(255,255,255,0.5)' : bg}
+      // bg={bg}
       zIndex="11"
       style={{ backdropFilter: offset ? 'saturate(200%) blur(15px)' : '' }}
     >
@@ -75,7 +85,7 @@ const Navbar: React.FC = () => {
         top="0"
         left="0"
         px={6}
-        bg={{ base: '#dcdcdc', lg: '#00000000' }}
+        bg={{ base: bgMobile, lg: '#00000000' }}
         position={{ base: 'absolute', lg: 'relative' }}
         w={{ base: '80%', lg: 'auto' }}
         h={{ base: '100vh', lg: 'auto' }}
@@ -87,6 +97,7 @@ const Navbar: React.FC = () => {
             </Link>
           </NextLink>
         ))}
+        <MoonIcon mt={1} onClick={toggleColorMode} />
       </Box>
     </Box>
   )

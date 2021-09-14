@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, ColorModeScript } from '@chakra-ui/react'
 import './global.scss'
 import 'modern-normalize'
 import theme from 'theme/theme'
@@ -15,6 +15,7 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         <title>English House</title>
       </Head>
       <ChakraProvider theme={theme}>
+        <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <Fonts />
         <Component {...pageProps} />
       </ChakraProvider>

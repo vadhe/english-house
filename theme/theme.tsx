@@ -10,12 +10,18 @@ const theme = extendTheme({
       }
     }
   },
+  config: {
+    initialColorMode: 'dark',
+    useSystemColorMode: false
+  },
   colors: {
     base: {
       blue: '#3C5186',
       purple: '#9B72AA',
       semiPurple: '#C6B4CE',
-      white: '#FFF5DE'
+      white: '#FFF5DE',
+      transparan: '#00000000',
+      dark: '#1a202c'
     }
   }
 })
