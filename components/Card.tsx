@@ -50,7 +50,7 @@ const Card: React.FC<CardProps> = ({ img, heading, description, id, bgCard }) =>
       >
         <Box d="none">{id}</Box>
         <Img h="200px" w="300px" src={img} />
-        <Heading textTransform="uppercase" as="h3" my={4} fontFamily="Bevas Neue, cursive" fontSize="xl">
+        <Heading textTransform="uppercase" as="h3" my={4} fontSize="xl">
           {heading}
         </Heading>
         <Text>{description}</Text>

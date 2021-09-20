@@ -66,19 +66,16 @@ const Navbar: React.FC = () => {
       textTransform="uppercase"
       py="32px"
       px={{ base: '1rem', lg: '48px' }}
-      fontFamily="Bebas Neue, cursive"
-      fontWeight={{ base: 'bold', lg: 'light' }}
-      fontSize="xl"
+      fontSize="sm"
       position="sticky"
       w="100%"
       top="0"
       boxShadow={offset ? 'rgb(0 0 0 / 5%) 0px 15px 25px' : ''}
       bg={offset ? 'rgba(255,255,255,0.5)' : bg}
-      // bg={bg}
       zIndex="11"
       style={{ backdropFilter: offset ? 'saturate(200%) blur(15px)' : '' }}
     >
-      <Text>Werlcome 👋</Text>
+      <Text fontWeight="extrabold">Werlcome 👋</Text>
       <Img d={{ lg: 'none' }} onClick={handleShowHidden} w="40px" src="/images/bar.png" />
       <Box
         d={{ base: showHidden, lg: 'flex' }}

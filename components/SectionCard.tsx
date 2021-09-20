@@ -20,7 +20,7 @@ const SectionCard: React.FC<SectionCardProps> = ({ heading, cards, id, bg, bgCar
   const background = useColorModeValue(bg, 'base.dark')
   return (
     <Box id={id} mb={6} py={16} zIndex="10" bg={background} w="100%" color="white">
-      <Heading my={4} fontFamily="Bevas Neue, cursive" as="h2" textAlign="center" fontSize={{ base: '4xl' }}>
+      <Heading my={4} as="h2" textAlign="center" fontSize={{ base: 'xl' }}>
         {heading}
       </Heading>
       <Carousel

@@ -1,11 +1,15 @@
 import * as React from 'react'
-import { Img, Flex, useColorModeValue } from '@chakra-ui/react'
+import { Img, Flex, useColorModeValue, Text } from '@chakra-ui/react'
 
 const Footer: React.FC = () => {
   const bg = useColorModeValue('base.purple', 'base.dark')
   return (
     <Flex color="#fff" justifyContent="center" alignItems="center" bg={bg} w="100%" textAlign="center" p={4}>
-      &copy; English House ||
+      &copy;{' '}
+      <Text fontWeight="extrabold" mx={1}>
+        English House
+      </Text>{' '}
+      ||
       <a
         href=" https://discord.gg/7stg99r
        "

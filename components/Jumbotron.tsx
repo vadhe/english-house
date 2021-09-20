@@ -20,12 +20,12 @@ const Jumbotron: React.FC = () => {
         top="180"
         position="fixed"
       >
-        <Heading fontFamily="Bevas Neue, cursive" as="h2" fontSize={{ base: '4xl' }}>
+        <Heading as="h2" fontSize={{ base: '2xl' }}>
           <motion.div initial={{ y: -250 }} transition={{ delay: 1, type: 'spring', duration: 2 }} animate={{ y: -10 }}>
             English House
           </motion.div>
         </Heading>
-        <Text my={4} fontSize={{ base: 'xl', lg: '2xl' }}>
+        <Text my={4} fontSize="xl">
           <motion.div initial={{ x: -1000 }} transition={{ delay: 2, type: 'spring', duration: 1 }} animate={{ x: 0 }}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, nesciunt.
           </motion.div>

@@ -5,13 +5,13 @@ const AboutUs: React.FC = () => {
   const bg = useColorModeValue('#9B72AA', 'base.dark')
   return (
     <Box borderY="1px" bg={bg} py={16} id="about" pt={6} color="#fff" position="relative" zIndex="10">
-      <Heading my={4} fontFamily="Bevas Neue, cursive" as="h2" textAlign="center" fontSize={{ base: '4xl' }}>
+      <Heading my={4} as="h2" textAlign="center" fontSize={{ base: '2xl' }}>
         About Us
       </Heading>
       <SimpleGrid gap={4} columns={{ base: 1, lg: 2 }} px={{ lg: 32 }}>
         <Img my={4} w="70%" mx={{ base: 'auto' }} borderRadius={{ md: '1rem' }} src="/images/EH_Logo.png" />
         <Box textAlign={{ base: 'center', lg: 'left' }}>
-          <Heading mt={4} fontFamily="Bevas Neue, cursive" as="h2" textAlign={{ base: 'center', lg: 'left' }} fontSize={{ base: '4xl' }}>
+          <Heading mt={4} as="h2" textAlign={{ base: 'center', lg: 'left' }} fontSize={{ base: 'xl' }}>
             English House
           </Heading>
           <Text>English cominity discord</Text>

@@ -5,8 +5,26 @@ const theme = extendTheme({
   styles: {
     global: {
       body: {
-        fontFamily: ' Roboto Slab, serif',
+        fontFamily: 'Poppins, sans-serif',
         color: '#09101b'
+      }
+    }
+  },
+  components: {
+    Heading: {
+      baseStyle: {
+        fontWeight: 'extrabold',
+        textTransform: 'uppercase'
+      }
+    },
+    Text: {
+      baseStyle: {
+        fontWeight: '300' // Normally, it is "semibold"
+      }
+    },
+    Link: {
+      baseStyle: {
+        fontWeight: 'bold' // Normally, it is "semibold"
       }
     }
   },
