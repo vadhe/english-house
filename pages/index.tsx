@@ -1,11 +1,11 @@
-import * as React from 'react'
-import { NextPage } from 'next'
 import { Box } from '@chakra-ui/react'
-import Navbar from '~/components/Navbar'
-import Jumbotron from '~/components/Jumbotron'
+import { NextPage } from 'next'
+import * as React from 'react'
 import AboutUs from '~/components/AboutUs'
-import SectionCard from '~/components/SectionCard'
 import Footer from '~/components/Footer'
+import Jumbotron from '~/components/Jumbotron'
+import Navbar from '~/components/Navbar'
+import SectionCard from '~/components/SectionCard'
 
 const englishEducation = [
   {
@@ -24,7 +24,7 @@ const englishEducation = [
   },
   {
     id: 3,
-    heading: 'Proof Reading',
+    heading: 'ProofReading',
     description:
       ' Lorem ipsum dolor site amet techno adipisicing elit sed dreamit eiusmod tempor incididunt labore dolore. Lorem ipsum dolor site   amet techno adipisicing elit sed dreamit eiusmod tempor incididunt labore dolore.. ',
     img: '/images/english-class.png'
@@ -42,7 +42,7 @@ const englishLearning = [
     id: 2,
     heading: 'IOTD',
     description:
-      ' Lorem ipsum dolor site amet techno adipisicing elit sed dreamit eiusmod tempor incididunt labore dolore. Lorem ipsum dolor site   amet techno adipisicing elit sed dreamit eiusmod tempor incididunt labore dolore.. ',
+      ' Lorem ipsum dolor site asmet techno adipisicing elit sed dreamit eiusmod tempor incididunt labore dolore. Lorem ipsum dolor site   amet techno adipisicing elit sed dreamit eiusmod tempor incididunt labore dolore.. ',
     img: '/images/english-class.png'
   },
   {

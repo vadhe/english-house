@@ -1,5 +1,5 @@
+import { Box, Heading, Img, SimpleGrid, Text, useColorModeValue } from '@chakra-ui/react'
 import * as React from 'react'
-import { Box, Heading, Img, Text, SimpleGrid, useColorModeValue } from '@chakra-ui/react'
 
 const AboutUs: React.FC = () => {
   const bg = useColorModeValue('#9B72AA', 'base.dark')

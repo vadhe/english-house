@@ -1,6 +1,6 @@
-import * as React from 'react'
-import { Box, Text, Heading, useColorModeValue } from '@chakra-ui/react'
+import { Box, Heading, Text, useColorModeValue } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
+import * as React from 'react'
 
 const Jumbotron: React.FC = () => {
   const bg = useColorModeValue('', 'base.dark')

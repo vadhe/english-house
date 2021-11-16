@@ -1,6 +1,7 @@
-import * as React from 'react'
 import { Box, Heading, useColorModeValue } from '@chakra-ui/react'
+import * as React from 'react'
 import Carousel from 'react-elastic-carousel'
+
 import Card, { CardProps } from './Card'
 
 const breakPoints = [
@@ -23,6 +24,7 @@ const SectionCard: React.FC<SectionCardProps> = ({ heading, cards, id, bg, bgCar
       <Heading my={4} as="h2" textAlign="center" fontSize={{ base: 'xl' }}>
         {heading}
       </Heading>
+
       <Carousel
         isRTL={false}
         breakPoints={breakPoints}
@@ -30,7 +32,7 @@ const SectionCard: React.FC<SectionCardProps> = ({ heading, cards, id, bg, bgCar
         tiltEasing="cubic-bezier(0.110, 1, 1.000, 0.210)"
         transitionMs={700}
         showArrows={false}
-        outerSpacing={4}
+        outerSpacing={0}
       >
         {cards.map(item => (
           <Card id={item.id} key={item.id} heading={item.heading} img={item.img} bgCard={bgCard} description={item.description} />

@@ -1,4 +1,4 @@
-import { Button, Link, Box } from '@chakra-ui/react'
+import { Box, Button, Link } from '@chakra-ui/react'
 import * as React from 'react'
 
 interface Button {

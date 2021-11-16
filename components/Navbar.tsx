@@ -1,7 +1,7 @@
-import { Box, Text, Link, Img, useColorMode, useColorModeValue } from '@chakra-ui/react'
-import * as React from 'react'
-import NextLink from 'next/link'
 import { MoonIcon } from '@chakra-ui/icons'
+import { Box, Img, Link, Text, useColorMode, useColorModeValue } from '@chakra-ui/react'
+import NextLink from 'next/link'
+import * as React from 'react'
 
 const links = [
   {
@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
       zIndex="11"
       style={{ backdropFilter: offset ? 'saturate(200%) blur(15px)' : '' }}
     >
-      <Text fontWeight="extrabold">Werlcome 👋</Text>
+      <Text fontWeight="extrabold">Welcome 👋</Text>
       <Img d={{ lg: 'none' }} onClick={handleShowHidden} w="40px" src="/images/bar.png" />
       <Box
         d={{ base: showHidden, lg: 'flex' }}

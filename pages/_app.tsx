@@ -1,11 +1,12 @@
-import * as React from 'react'
+import { ChakraProvider, ColorModeScript } from '@chakra-ui/react'
+import 'modern-normalize'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
-import { ChakraProvider, ColorModeScript } from '@chakra-ui/react'
-import './global.scss'
-import 'modern-normalize'
-import theme from 'theme/theme'
+import * as React from 'react'
 import Fonts from 'theme/Fonts'
+import theme from 'theme/theme'
+
+import './global.scss'
 
 export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (

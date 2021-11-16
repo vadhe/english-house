@@ -1,5 +1,5 @@
+import { Flex, Img, Text, useColorModeValue } from '@chakra-ui/react'
 import * as React from 'react'
-import { Img, Flex, useColorModeValue, Text } from '@chakra-ui/react'
 
 const Footer: React.FC = () => {
   const bg = useColorModeValue('base.purple', 'base.dark')
@@ -22,9 +22,9 @@ const Footer: React.FC = () => {
         <Img ml={1} w="30px" src="/images/instagram.svg" />
       </a>
       ||
-      <a rel="noreferrer" href="https://github.com/vadhe/english-house" target="_blank">
+      {/* <a rel="noreferrer" href="https://github.com/vadhe/english-house" target="_blank">
         <Img ml={1} w="30px" src="/images/github.png" />
-      </a>
+      </a> */}
     </Flex>
   )
 }
