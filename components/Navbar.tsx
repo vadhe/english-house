@@ -9,20 +9,20 @@ const links = [
     name: 'home'
   },
   {
-    link: '#about',
+    link: '/#about',
     name: 'about'
   },
   {
-    link: '#english-education',
+    link: '/#english-education',
     name: 'english education'
   },
   {
-    link: '#english-learning',
+    link: '/#english-learning',
     name: 'english learning'
   },
 
   {
-    link: '#event',
+    link: '/#event',
     name: 'Events and Competitions'
   },
   {
