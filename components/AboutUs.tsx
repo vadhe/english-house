@@ -16,12 +16,8 @@ const AboutUs: React.FC = () => {
           </Heading>
           <Text>English cominity discord</Text>
           <Text my={4} textAlign="left" px={{ base: 2, lg: 0 }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate maiores hic ad sit id iusto earum, dicta sint quae totam
-            neque reprehenderit natus dolore pariatur accusamus laboriosam veritatis est dolores quas modi omnis. Dicta enim praesentium
-            tenetur laboriosam, at ducimus culpa assumenda et sequi dolore aut corporis totam quasi, minus vel maiores nihil! Nisi eum
-            delectus voluptate corporis. Itaque consequuntur tempore voluptatem blanditiis. Autem eveniet explicabo corrupti quidem.
-            Cupiditate earum reprehenderit recusandae doloribus autem? Cumque laudantium culpa delectus, architecto libero rem quaerat sequi
-            enim blanditiis, numquam officia repellat earum aliquam aut quis quas minus consequuntur molestiae. Itaque voluptas cumque a.
+            English house is a non-profit socio-educational community for people around the world to learn English, practice their
+            listening, reading, writing, and speaking skills, through formal and informal interactions on the online Discord platform.
           </Text>
         </Box>
       </SimpleGrid>

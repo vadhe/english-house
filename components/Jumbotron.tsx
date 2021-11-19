@@ -2,7 +2,7 @@ import { Box, Heading, Text, useColorModeValue } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import * as React from 'react'
 
-const Jumbotron: React.FC = () => {
+const Jumbotron: React.FC<{ content: string }> = ({ content }) => {
   const bg = useColorModeValue('', 'base.dark')
   return (
     <Box bg={bg} position="relative" h="90vh" color="#fff">
@@ -27,7 +27,7 @@ const Jumbotron: React.FC = () => {
         </Heading>
         <Text my={4} fontSize="xl">
           <motion.div initial={{ x: -1000 }} transition={{ delay: 2, type: 'spring', duration: 1 }} animate={{ x: 0 }}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, nesciunt.
+            {content}
           </motion.div>
         </Text>
         <a href="https://discord.gg/7stg99r">

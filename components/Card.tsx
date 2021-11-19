@@ -35,7 +35,7 @@ const Card: React.FC<CardProps> = ({ img, heading, description, id, bgCard }) =>
   }, [inView])
   return (
     <motion.div animate={animation}>
-      <Link href="card/9">
+      <Link href="/">
         <Box
           cursor="pointer"
           ref={ref}
@@ -49,6 +49,7 @@ const Card: React.FC<CardProps> = ({ img, heading, description, id, bgCard }) =>
           flexDir="column"
           boxShadow="4xl"
           borderRadius="1rem"
+          minH="34rem"
           w={{ base: '100%', lg: '100%' }}
           p={4}
           color="white"
