@@ -31,7 +31,7 @@ const SectionCard: React.FC<SectionCardProps> = ({ heading, cards, id, bg, bgCar
         easing="cubic-bezier(1,.15,.55,1.54)"
         tiltEasing="cubic-bezier(0.110, 1, 1.000, 0.210)"
         transitionMs={700}
-        showArrows={false}
+        showArrows
         outerSpacing={0}
       >
         {cards.map(item => (

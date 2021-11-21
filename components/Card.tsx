@@ -59,7 +59,7 @@ const Card: React.FC<CardProps> = ({ img, heading, description, id, bgCard }) =>
           <Heading textTransform="uppercase" as="h3" my={4} fontSize="xl">
             {heading}
           </Heading>
-          <Text>{description}</Text>
+          <Text textAlign="center">{description}</Text>
           {/* <Box className="popup" overflowY="scroll" borderRadius="1rem" px={2} py={4}>
           English Class is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy
           text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has

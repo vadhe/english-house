@@ -34,11 +34,11 @@ const reqruitment: React.FC = () => {
               and help us reach a wider amount of people!
             </motion.div>
           </Text>
-          <Text mt={5} fontSize="md" fontStyle="italic">
+          {/* <Text mt={5} fontSize="md" fontStyle="italic">
             <motion.div initial={{ x: -1000 }} transition={{ delay: 2, type: 'spring', duration: 1 }} animate={{ x: 0 }}>
-              "We will post when we are open to the opportunity here! stay tune"
+              "We will post when we are open to the opportunity here! stay tuned"
             </motion.div>
-          </Text>
+          </Text> */}
         </Box>
       </Box>
     </>

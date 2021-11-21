@@ -1,4 +1,4 @@
-import { Box, Heading, Text, useColorModeValue } from '@chakra-ui/react'
+import { Box, Heading, Img, Text, useColorModeValue } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import * as React from 'react'
 
@@ -20,6 +20,11 @@ const Jumbotron: React.FC<{ content: string }> = ({ content }) => {
         top="180"
         position="fixed"
       >
+        {/* <Heading as="h2" fontSize={{ base: '2xl' }}> */}
+        <motion.div initial={{ y: -250 }} transition={{ delay: 1, type: 'spring', duration: 2 }} animate={{ y: -10 }}>
+          <Img w="32px" h="32px" my={2} src="images/eh-head.png" />
+        </motion.div>
+        {/* </Heading> */}
         <Heading as="h2" fontSize={{ base: '2xl' }}>
           <motion.div initial={{ y: -250 }} transition={{ delay: 1, type: 'spring', duration: 2 }} animate={{ y: -10 }}>
             English House
