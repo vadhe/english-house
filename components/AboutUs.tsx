@@ -8,7 +8,7 @@ const AboutUs: React.FC = () => {
   return (
     <Box borderY="1px" bg={bg} py={16} id="about" pt={6} color="#fff" position="relative" zIndex="10">
       <Heading my={4} as="h2" textAlign="center" fontSize={{ base: '2xl' }}>
-        About Us
+        take the first step to know more about us!
       </Heading>
       <SimpleGrid gap={4} columns={{ base: 1, lg: 2 }} px={{ lg: 32 }}>
         <Img my={4} w="70%" mx={{ base: 'auto' }} borderRadius={{ md: '1rem' }} src={`/images/${ehImage}`} />

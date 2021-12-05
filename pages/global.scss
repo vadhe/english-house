@@ -48,5 +48,14 @@ a {
 //   }
 
 // }
+.ehkxHv:disabled, .cGKbZh {
+    cursor: not-allowed;
+    display: none;
+}
 
-
+@media (min-width: 1024px) { 
+  .ehkxHv:disabled, .cGKbZh {
+    cursor: not-allowed;
+    display: block;
+  }
+}

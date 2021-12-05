@@ -43,13 +43,13 @@ const Card: React.FC<CardProps> = ({ img, heading, description, id, bgCard }) =>
           py={4}
           bg={bg}
           d="flex"
-          mx="1rem"
+          // mx="1rem"
           boxSizing="border-box"
           alignItems="center"
           flexDir="column"
           boxShadow="4xl"
           borderRadius="1rem"
-          minH="34rem"
+          minH="37rem"
           w={{ base: '100%', lg: '100%' }}
           p={4}
           color="white"

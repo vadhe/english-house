@@ -33,10 +33,14 @@ const SectionCard: React.FC<SectionCardProps> = ({ heading, cards, id, bg, bgCar
         transitionMs={700}
         showArrows
         outerSpacing={0}
+        itemPadding={[10, 10]}
       >
         {cards.map(item => (
           <Card id={item.id} key={item.id} heading={item.heading} img={item.img} bgCard={bgCard} description={item.description} />
         ))}
+        {/* <Box w="full" bg="red.800">ok</Box>
+        <Box w="full" bg="blue.400">ok</Box>
+        <Box w="full" bg="yellow.100">ok</Box> */}
       </Carousel>
     </Box>
   )
