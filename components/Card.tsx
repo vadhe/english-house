@@ -49,7 +49,7 @@ const Card: React.FC<CardProps> = ({ img, heading, description, id, bgCard }) =>
           flexDir="column"
           boxShadow="4xl"
           borderRadius="1rem"
-          minH="50rem"
+          minH="40rem"
           w={{ base: '100%', lg: '100%' }}
           p={4}
           color="white"
