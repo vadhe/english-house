@@ -20,6 +20,12 @@ class MyDocument extends Document {
           <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="96x96" href="/static/favicon-96x96.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png" />
+          <meta name="title" content="englishhouse" />
+          <meta name="description" content="English House is an English community server made for English learners based in Indonesia." />
+          <meta name="keywords" content="englishhouse,discord,community" />
+          <meta name="robots" content="index, follow" />
+          <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+          <meta name="language" content="English" />
         </Head>
         <body>
           <Main />
