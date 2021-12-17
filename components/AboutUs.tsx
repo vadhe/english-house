@@ -16,12 +16,11 @@ const AboutUs: React.FC = () => {
           <Heading mt={4} as="h2" textAlign={{ base: 'center', lg: 'left' }} fontSize={{ base: 'xl' }}>
             English House
           </Heading>
-          <Text>English community discord</Text>
           <Text my={4} textAlign="left" px={{ base: 2, lg: 0 }}>
             English House is an English community server made for English learners based in Indonesia. Regardless Indonesian majority, every
-            nationality and race is welcome. The Community was established on the 12th of December, 2017. The vision of English House is to
-            Encourage members of the Community to have a positive attitude towards learning English and maintain tolerance and mutual
-            respect among the members of the Community. English House also provide classes, programs, events, and activities that enhances
+            nationality and race is welcome. The community was established on the 12th of December, 2017. The vision of English House is to
+            encourage members of the community to have a positive attitude towards learning English and maintain tolerance and mutual
+            respect among the members of the community. English House also provide classes, programs, events, and activities that enhances
             the skills and aspirations of the members in learning English and control and maintain a safe and healthy learning and social
             environment as its missions. English House is a home which we believe where English learners around the world can improve their
             English without getting bullied or disrespect.

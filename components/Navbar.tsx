@@ -27,7 +27,7 @@ const links = [
   },
   {
     link: '/reqruitment',
-    name: 'Reqruitment Staff'
+    name: 'Recruitment Staff'
   }
 ]
 const Navbar: React.FC = () => {
