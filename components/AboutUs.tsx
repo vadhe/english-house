@@ -18,8 +18,13 @@ const AboutUs: React.FC = () => {
           </Heading>
           <Text>English community discord</Text>
           <Text my={4} textAlign="left" px={{ base: 2, lg: 0 }}>
-            English house is a non-profit socio-educational community for people around the world to learn English, practice their
-            listening, reading, writing, and speaking skills, through formal and informal interactions on the online Discord platform.
+            English House is an English community server made for English learners based in Indonesia. Regardless Indonesian majority, every
+            nationality and race is welcome. The Community was established on the 12th of December, 2017. The vision of English House is to
+            Encourage members of the Community to have a positive attitude towards learning English and maintain tolerance and mutual
+            respect among the members of the Community. English House also provide classes, programs, events, and activities that enhances
+            the skills and aspirations of the members in learning English and control and maintain a safe and healthy learning and social
+            environment as its missions. English House is a home which we believe where English learners around the world can improve their
+            English without getting bullied or disrespect.
           </Text>
         </Box>
       </SimpleGrid>
